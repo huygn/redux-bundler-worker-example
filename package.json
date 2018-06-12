@@ -4,35 +4,26 @@
   "description": "example showing how to use redux-bundler for data fetching",
   "main": "index.js",
   "scripts": {
-    "start": "lite-server --baseDir=public & rollup -c -w",
-    "build": "NODE_ENV=production rollup -c"
+    "dev": "poi",
+    "build": "poi build"
   },
   "author": "Henrik Joreteg <henrik@joreteg.com> (joreteg.com)",
   "license": "MIT",
   "dependencies": {
-    "@henrikjoreteg/rollup-plugin-css": "1.0.0",
-    "cssmin": "0.4.3",
-    "internal-nav-helper": "1.0.2",
-    "lite-server": "2.3.0",
+    "internal-nav-helper": "^1.0.2",
     "milliseconds": "1.0.3",
-    "money-clip": "2.0.0",
+    "money-clip": "^2.0.2",
     "preact": "8.2.7",
-    "redux-bundler": "21.0.0",
-    "redux-bundler-preact": "1.1.0",
+    "redux-bundler": "^21.2.1",
+    "redux-bundler-preact": "^1.1.0",
     "redux-bundler-worker": "0.0.3",
-    "rollup": "0.55.1",
-    "rollup-plugin-buble": "0.18.0",
-    "rollup-plugin-commonjs": "8.3.0",
-    "rollup-plugin-json": "2.3.0",
-    "rollup-plugin-node-resolve": "3.0.2",
-    "rollup-plugin-replace": "2.0.0",
-    "rollup-plugin-uglify": "3.0.0",
     "tryit": "1.0.3",
     "worker-proof": "1.0.0"
   },
   "devDependencies": {
-    "babel-preset-env": "1.6.1",
-    "babel-preset-preact": "1.1.0"
+    "babel-preset-poi": "^10.0.1",
+    "poi": "^10.2.7",
+    "webpack-manifest-plugin": "^2.0.3"
   },
   "prettier": {
     "semi": false,

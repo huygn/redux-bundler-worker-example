@@ -3,7 +3,7 @@ import { Provider } from 'redux-bundler-preact'
 import Layout from './components/layout'
 import { getStoreProxy } from 'redux-bundler-worker'
 
-const worker = new Worker('/build/worker.js')
+const worker = new Worker('/worker.js')
 const storeProxy = getStoreProxy(worker, true)
 
 render(
