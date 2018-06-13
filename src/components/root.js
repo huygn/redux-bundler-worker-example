@@ -1,5 +1,5 @@
-import { h } from 'preact'
-import { Provider } from 'redux-bundler-preact'
+import React from 'react'
+import { Provider } from 'redux-bundler-react'
 import Layout from './layout'
 
 export default store => (

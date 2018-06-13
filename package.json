@@ -14,8 +14,11 @@
     "milliseconds": "1.0.3",
     "money-clip": "^2.0.2",
     "preact": "8.2.7",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
     "redux-bundler": "^21.2.1",
     "redux-bundler-preact": "^1.1.0",
+    "redux-bundler-react": "^1.0.0",
     "redux-bundler-worker": "0.0.3",
     "tryit": "1.0.3",
     "worker-proof": "1.0.0"
@@ -24,6 +27,10 @@
     "babel-preset-poi": "^10.0.1",
     "poi": "^10.2.7",
     "webpack-manifest-plugin": "^2.0.3"
+  },
+  "resolutions": {
+    "react": "16.4.0",
+    "react-dom": "16.4.0"
   },
   "prettier": {
     "semi": false,

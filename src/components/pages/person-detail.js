@@ -1,5 +1,5 @@
-import { connect } from 'redux-bundler-preact'
-import { h } from 'preact'
+import { connect } from 'redux-bundler-react'
+import React from 'react'
 
 const PersonDetailPage = ({routeParams, activePerson}) => (
   <article>

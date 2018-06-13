@@ -1,5 +1,5 @@
-import { connect } from 'redux-bundler-preact'
-import { h } from 'preact'
+import { connect } from 'redux-bundler-react'
+import React from 'react'
 
 const HomePage = ({baseDataStatus, baseData}) => (
   <article>
@@ -8,7 +8,7 @@ const HomePage = ({baseDataStatus, baseData}) => (
     <p>Open the network tab and you'll notice there's a lot more code in /build/worker.js than in main.js</p>
     <p>URL state is still stored in, and controlled by redux. But bound to the browser. So clicking a link, triggers a doUpdateUrl action creator, which sends that action to the worker, which processes it, and the new url state is echoed back to the main thread, where it it applied to the browser.</p>
 
-    <div class='ph3 ba br3 bg-lightest-blue'>
+    <div className='ph3 ba br3 bg-lightest-blue'>
       <h3>Dynamically Fetched Data:</h3>
       <p>Source: https://swapi.co/api/</p>
       <p>Status: {baseDataStatus}</p>

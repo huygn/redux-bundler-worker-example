@@ -2,9 +2,6 @@ const path = require('path')
 const ManifestPlugin = require('webpack-manifest-plugin')
 
 module.exports = {
-  babel: {
-    jsx: 'h'
-  },
   entry: 'src/main.js',
   html: {
     template: path.resolve('public', 'index.html')

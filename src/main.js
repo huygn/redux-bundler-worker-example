@@ -1,5 +1,6 @@
-import { render, h } from 'preact'
-import { Provider } from 'redux-bundler-preact'
+import React from 'react'
+import { render } from 'react-dom'
+import { Provider } from 'redux-bundler-react'
 import Layout from './components/layout'
 import { getStoreProxy } from 'redux-bundler-worker'
 
