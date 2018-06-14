@@ -21,7 +21,7 @@ Notes and additional things demonstrated here:
 * The main thread keeps a copy, _not of the state_ but of the result of running all the selectors from the store. From then only deltas as passed to the main thread (this could be made even more efficient by only sending and tracking deltas of results the UI is currently using as indicated by selectors specified in `connect()`).
 * There are times when you _need_ to be on the main thread, such as when you'd like to register global event listeners, or request geolocation, or any number or other APIs that are not yet available inside worker contexts (this, by the way, is where most examples of this type of thing seem to break down). But, it's _possible_ though, not super pretty, to still keep such code in a redux-bundle. This is demonstrated by adding a "viewport bundle" here that essentially echoes the browser's viewport size to redux state. This type of thing is occasionally useful if we need to change, not just style, but _behavior_ of an application based on viewport size. This is accomplished by serializing a function and passing it to the main thread for execution and allowing a callback to be triggered whenever required. This is done using my [worker-proof](https://github.com/HenrikJoreteg/worker-proof) library as you see used inside `/src/bundles/viewport.js`
 
-It's deployed here: [https://redux-bundler-worker.netlify.com/](https://redux-bundler-worker.netlify.com/).
+It's deployed here: [https://redux-bundler-worker-example.netlify.com/](https://redux-bundler-worker-example.netlify.com/).
 
 The main [redux-bundler repo](https://github.com/HenrikJoreteg/redux-bundler) is here.
 
@@ -32,10 +32,10 @@ Just wanted to demonstrate what's possible with relatively minor modifications w
 ## running it locally
 
 ```
-npm i && npm start
+yarn && yarn dev
 ```
 
-Then open http://localhost:3000
+Then open http://localhost:4000
 
 ## license
 
